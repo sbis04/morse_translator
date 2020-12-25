@@ -5,14 +5,9 @@ workflows:
     name: morse_translator
     environment:
       flutter: beta
-    cache:
-      cache_paths:
-        - $FLUTTER_ROOT/.pub-cache
     scripts:
       - name: Switch to Dart beta
         script: |
-          brew unlink dart
-          brew install -f dart
           dart --version
       - name: Static analysis
         script: |
