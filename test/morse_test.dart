@@ -2,14 +2,6 @@ import 'package:morse/morse.dart';
 import 'package:test/test.dart';
 
 void main() {
-  test('Text: Fails with null', () {
-    expect(() => Morse.fromString(null), throwsArgumentError);
-  });
-
-  test('Morse: Fails with null', () {
-    expect(() => Morse.toString(null), throwsArgumentError);
-  });
-
   test('Convert to morse', () {
     final m = Morse.fromString('hello world');
     expect(m.textLength, 11);
