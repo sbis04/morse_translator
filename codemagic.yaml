@@ -14,12 +14,12 @@ workflows:
           brew unlink dart
           brew install dart-beta
           dart --version
-      - name: Static analysis
-        script: |
-          dart analyze
       - name: Testing
         script: |
           dart test
+      - name: Static analysis
+          script: |
+            dart analyze
       - name: Publishing
         script: |
           pub publish --dry-run
