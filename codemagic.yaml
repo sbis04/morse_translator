@@ -15,13 +15,13 @@ workflows:
           brew install -f dart
       - name: Get packages
         script: |
-          flutter pub get
+          dart pub get
       - name: Static analysis
         script: |
-          flutter analyze
+          dart analyze
       - name: Testing
         script: |
-          flutter test
+          dart test
       - name: Publishing
         script: |
-          flutter pub publish --dry-run
+          pub publish --dry-run
