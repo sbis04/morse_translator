@@ -13,9 +13,7 @@ workflows:
         script: |
           brew unlink dart
           brew install -f dart
-      - name: Get packages
-        script: |
-          pub get
+          dart --version
       - name: Static analysis
         script: |
           dart analyze
