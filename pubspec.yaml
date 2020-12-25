@@ -3,8 +3,9 @@ description: A dart library for morse encryption and decryption
 version: 1.0.0
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0-133.2.beta <3.0.0'
 
 dependencies:
   test: ^1.16.0-nullsafety.13
   characters: ^1.1.0-nullsafety.5
+  collection: ^1.15.0-nullsafety.4
