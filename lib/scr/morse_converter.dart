@@ -32,6 +32,7 @@ class Morse {
   });
 
   factory Morse.fromString(String normalText) {
+    if (normalText == null) throw ArgumentError();
     int length = normalText.length;
     String finalString = '';
 
@@ -72,6 +73,7 @@ class Morse {
   }
 
   factory Morse.toString(String morseText) {
+    if (morseText == null) throw ArgumentError();
     int morseLength = morseText.length;
     String finalString = '';
 
