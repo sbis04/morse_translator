@@ -20,6 +20,8 @@ workflows:
       - name: Static analysis
         script: |
           dart analyze
-      - name: Check for publishing
+    publishing:
+      scripts:
+        - name: Check for publishing
         script: |
           pub publish --dry-run
