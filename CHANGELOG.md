@@ -1,3 +1,4 @@
-## [0.0.1] - Initial release
+## [1.1.0-nullsafety.0] - Initial release
 
-* Support morse encryption and decryption
+* Supports morse encryption and decryption
+* Supports null safety
