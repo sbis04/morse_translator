@@ -1,4 +1,4 @@
-import 'package:morse/scr/morse_converter.dart';
+import 'package:morse/morse.dart';
 import 'package:test/test.dart';
 
 void main() {

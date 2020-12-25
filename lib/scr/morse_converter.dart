@@ -1,5 +1,3 @@
-library custom_morse;
-
 import 'morse_brain.dart';
 import 'package:characters/characters.dart';
 
