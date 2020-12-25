@@ -1,3 +1,5 @@
+import 'package:collection/collection.dart' show IterableExtension;
+
 class MorseBrain {
   static final Map<String, String> _morseCharacterDictionary = {
     'a': '.-',
@@ -56,7 +58,7 @@ class MorseBrain {
   static String parseCharacter(String morseCharacter) {
     if (_morseCharacterDictionary.containsValue(morseCharacter)) {
       return _morseCharacterDictionary.keys
-          .firstWhere((k) => _morseCharacterDictionary[k] == morseCharacter, orElse: () => null);
+          .firstWhereOrNull((k) => _morseCharacterDictionary[k] == morseCharacter)!;
     } else {
       return 'unknown';
     }
