@@ -2,8 +2,12 @@ import 'package:morse/scr/morse_converter.dart';
 import 'package:test/test.dart';
 
 void main() {
-  test('Fails with null', () {
+  test('Text: Fails with null', () {
     expect(() => Morse.fromString(null), throwsArgumentError);
+  });
+
+  test('Morse: Fails with null', () {
+    expect(() => Morse.toString(null), throwsArgumentError);
   });
 
   test('Convert to morse', () {
