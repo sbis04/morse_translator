@@ -22,6 +22,5 @@ workflows:
           dart analyze
     publishing:
       scripts:
-        - name: Check for publishing
-        script: |
+        - |
           pub publish --dry-run
