@@ -1,4 +1,4 @@
-import 'package:morse/morse.dart';
+import 'package:morse_translator/morse.dart';
 
 void main(List<String> arguments) {
   try {

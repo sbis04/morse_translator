@@ -1,3 +1,3 @@
 library morse;
 
-export 'package:morse/scr/morse_converter.dart';
+export 'package:morse_translator/scr/morse_converter.dart';
