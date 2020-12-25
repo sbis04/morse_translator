@@ -1,6 +1,7 @@
 library custom_morse;
 
 import 'morse_brain.dart';
+import 'package:characters/characters.dart';
 
 /// add some more info
 /// `INTERNATIONAL MORSE TRANSLATION FORMAT`
@@ -33,7 +34,8 @@ class Morse {
 
   factory Morse.fromString(String normalText) {
     if (normalText == null) throw ArgumentError();
-    int length = normalText.length;
+    int length = normalText.characters.length;
+
     String finalString = '';
 
     List<String> words = normalText.split(' ');
@@ -103,7 +105,7 @@ class Morse {
       finalString += word;
     }
 
-    int length = finalString.length;
+    int length = finalString.characters.length;
 
     return Morse(
       textLength: length,
