@@ -9,6 +9,10 @@ workflows:
       cache_paths:
         - $FLUTTER_ROOT/.pub-cache
     scripts:
+      - name: Switch to Dart beta
+        script: |
+          brew unlink dart
+          brew install -f dart
       - name: Get packages
         script: |
           flutter pub get
