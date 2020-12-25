@@ -24,14 +24,13 @@ class Morse {
   String morse;
 
   Morse({
-    this.textLength,
-    this.morseLength,
-    this.text,
-    this.morse,
+    required this.textLength,
+    required this.morseLength,
+    required this.text,
+    required this.morse,
   });
 
   factory Morse.fromString(String normalText) {
-    if (normalText == null) throw ArgumentError();
     int length = normalText.characters.length;
 
     String finalString = '';
@@ -73,7 +72,6 @@ class Morse {
   }
 
   factory Morse.toString(String morseText) {
-    if (morseText == null) throw ArgumentError();
     int morseLength = morseText.length;
     String finalString = '';
 
