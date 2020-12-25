@@ -15,7 +15,7 @@ workflows:
           brew install -f dart
       - name: Get packages
         script: |
-          dart pub get
+          pub get
       - name: Static analysis
         script: |
           dart analyze
