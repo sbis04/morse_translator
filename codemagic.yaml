@@ -1,0 +1,23 @@
+# Check out https://docs.codemagic.io/getting-started/yaml/ for more information
+
+workflows:
+  flutter-package:
+    name: morse_translator
+    environment:
+      flutter: beta
+    cache:
+      cache_paths:
+        - $FLUTTER_ROOT/.pub-cache
+    scripts:
+      - name: Get packages
+        script: |
+          dart pub get
+      - name: Static analysis
+        script: |
+          dart analyze
+      - name: Testing
+        script: |
+          dart test
+      - name: Publishing
+        script: |
+          pub publish --dry-run
