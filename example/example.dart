@@ -6,8 +6,17 @@ void main(List<String> arguments) {
     print('Text: ${m.text}, length: ${m.textLength}');
     print('Morse: ${m.morse}, length: ${m.morseLength}');
   } catch (ArgumentError) {
-    print('Invalid input string: not correctly formatted');
+    print('Invalid input string: cannot be parsed');
+  }
+
+  try {
+    final m = Morse.toString(morseString);
+    print('Text: ${m.text}, length: ${m.textLength}');
+    print('Morse: ${m.morse}, length: ${m.morseLength}');
+  } catch (ArgumentError) {
+    print('Invalid input string: cannot be parsed');
   }
 }
 
 const testString = 'hello world';
+const morseString = '--.... --. --.-.. --.-.. -----/---- --.- --.. ---.';
